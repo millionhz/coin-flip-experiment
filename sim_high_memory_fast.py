@@ -42,8 +42,11 @@ while len(standing) > 1:
     sit_stand()
     print(f'Round {round} over!')
     print(f'Out of {r1p}; {subjects_lost} subjects lost in this round...')
-    print(
-        f'{r1p-subjects_lost} many people flipped heads {len(standing[0]["flips"])} time/s')
+    try:
+        print(
+            f'{r1p-subjects_lost} many people flipped heads {len(standing[0]["flips"])} time/s')
+    except:
+        pass
     try:
         print(f'Loss Ratio {(subjects_lost/r1p *100)}%\n')
     except:
