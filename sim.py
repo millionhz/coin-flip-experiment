@@ -1,11 +1,10 @@
 from random import randint
-from collections import deque
 
 print('Initializing....')
 subjects = ({'id': randint(100000, 999999), 'flips': []}
-            for x in range(100000))
-standing = deque([subject for subject in subjects])
-sitting = deque([])
+            for x in range(10000))
+standing = [subject for subject in subjects]
+sitting = []
 round = 0
 print('Initialized')
 
