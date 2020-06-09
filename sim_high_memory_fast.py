@@ -1,36 +1,40 @@
 from random import randint
 
-# limit = 5000000
-
-print('Initializing....')
+# limit = 9000000
+# memory usage = 2000MB
+# https://www.youtube.com/watch?v=uTChrirK-hw&t=373s
+# the lost and sitting array and its appending is commented out
+# as right now there is no real necessity to store that
+# info in memory
+print('\nInitializing....')
 # subjects = ({'id': randint(100000, 999999), 'flips': []}
 #             for x in range(100000000))
 # standing = [subject for subject in subjects]
 standing = [{'id': randint(100000, 999999), 'flips': []}
-            for x in range(5000000)]
-sitting = []
+            for x in range(9000000)]
+#sitting = []
 round = 0
-print('Initialized')
+print('Initialized \n')
 
 
 def sit_stand():
     global subjects_lost
     global standing
-    global sitting
+    #global sitting
     subjects_lost = 0
     win = []
-    lost = []
+    #lost = []
     for x in standing:
         if 0 in x['flips'][:-1]:
             print('ANOMALY')
         if x.get('flips')[-1] == 0:
             # print(f'{x["id"]} lost')
             subjects_lost += 1
-            lost.append(x)
+            # lost.append(x)
         else:
             win.append(x)
     standing = [x for x in win]
-    sitting.extend(lost)
+    # sitting.extend(lost)
 
 
 while len(standing) > 1:

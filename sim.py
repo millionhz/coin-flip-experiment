@@ -4,9 +4,10 @@ print('Initializing....')
 subjects = ({'id': randint(100000, 999999), 'flips': []}
             for x in range(10000))
 standing = [subject for subject in subjects]
-sitting = []
+#sitting = []
 round = 0
 print('Initialized')
+
 
 def sit_stand(standing):
     global subjects_lost
@@ -18,7 +19,7 @@ def sit_stand(standing):
         if x.get('flips')[-1] == 0:
             #print(f'{x["id"]} lost')
             subjects_lost += 1
-            sitting.append(x)
+            # sitting.append(x)
             standing.remove(x)
 
 
@@ -27,7 +28,7 @@ while len(standing) > 1:
     for x in standing:
         #print(f'Processing {x.get("id")}...')
         x['flips'].append(randint(0, 1))
-    print('Coins Fliped!')
+    print('Coins Flipped!')
     r1p = len(standing)
     sit_stand(standing)
     print(f'Round {round} over!')
@@ -37,12 +38,13 @@ while len(standing) > 1:
     except:
         break
 
-#print()
-#print(sitting)
+# print()
+# print(sitting)
 print()
 standing = list(standing)
 print(standing)
 try:
-    print(f'{standing[-1]["id"]} fliped heads {len(standing[-1]["flips"])} times \n')
+    print(
+        f'{standing[-1]["id"]} flipped heads {len(standing[-1]["flips"])} times \n')
 except:
     pass
