@@ -22,10 +22,10 @@ Also check out the [link](https://www.youtube.com/watch?v=uTChrirK-hw&t=373s) pr
 
 The python scripts simulate the coin flip experiment by making a set of a specific number of people, and recording there coin flips in an array, until only one person stands. The coin flips are calculated using the python random library.
 
-`sim_low_memory.py` simulates **10000** people. I choose that number as it is a quick script you can run and it does not uses a lot of memory.
+`sim_low_memory.py` simulates **20000** people. I choose that number as that dataset is easy and fast to simulate and it does not uses a lot of memory.
 
-`sim_high_memory.py` simulates **9000000** people. It is just to show that **22** consecutive coin flips to heads is possible. However, this script can use up to **2000MB** of memory and it is also a little slow. The memory usage can be decreased by using a better data structure _(which i didn't)_.
+`sim_high_memory.py` simulates **10000000** people. It is just to show that up to **22** consecutive coin flips to heads is possible. However, this script can use up to **2000MB** of memory and it is also a little slow. The memory usage can be decreased by using a better data structure _(which i didn't)_.
 
 ## The Anomalies
 
-Sometimes the script will not return a result, and its mainly because the last 2 or 3 people standing flipped tails. This is very unlikely but I have seen it happen during testing.
+Sometimes the script will not return a result (i.e. an empty array [ ]); its mainly because the last 2 or 3 people standing flipped tails. This is very unlikely but these sort of things happen because probability.

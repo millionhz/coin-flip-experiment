@@ -1,10 +1,8 @@
 from random import randint
 
 print('Initializing....')
-subjects = ({'id': randint(100000, 999999), 'flips': []}
-            for x in range(10000))
-standing = [subject for subject in subjects]
-#sitting = []
+standing = [{'id': x, 'flips': []}
+            for x in range(20000)]
 round = 0
 print('Initialized')
 
@@ -17,9 +15,7 @@ def sit_stand(standing):
         if 0 in x['flips'][:-1]:
             print('ANOMALY')
         if x.get('flips')[-1] == 0:
-            #print(f'{x["id"]} lost')
             subjects_lost += 1
-            # sitting.append(x)
             standing.remove(x)
 
 
@@ -38,8 +34,6 @@ while len(standing) > 1:
     except:
         break
 
-# print()
-# print(sitting)
 print()
 standing = list(standing)
 print(standing)

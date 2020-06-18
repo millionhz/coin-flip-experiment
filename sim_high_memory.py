@@ -1,17 +1,19 @@
-from random import randint
-
-# limit = 9000000
-# memory usage = 2000MB
+from random import randint, sample
+from string import ascii_letters, digits
+# TODO: Add numpy
+# *limit = 10000000
+# *max memory usage = 2000MB
 # https://www.youtube.com/watch?v=uTChrirK-hw&t=373s
-# the lost and sitting array and its appending is commented out
+# the lost and sitting array and is commented out
 # as right now there is no real necessity to store that
 # info in memory
 print('\nInitializing....')
 # subjects = ({'id': randint(100000, 999999), 'flips': []}
 #             for x in range(100000000))
 # standing = [subject for subject in subjects]
-standing = [{'id': randint(100000, 999999), 'flips': []}
-            for x in range(9000000)]
+# "".join(sample(f"{ascii_letters}{digits}=_",9))
+standing = [{'id': x, 'flips': []}
+            for x in range(10000000)]
 #sitting = []
 round = 0
 print('Initialized \n')
@@ -33,7 +35,7 @@ def sit_stand():
             # lost.append(x)
         else:
             win.append(x)
-    standing = [x for x in win]
+    standing = win.copy()
     # sitting.extend(lost)
 
 
@@ -59,7 +61,7 @@ while len(standing) > 1:
 # print(sitting)
 print()
 standing = list(standing)
-print(standing)
+print(standing, "\n")
 try:
     print(
         f'{standing[-1]["id"]} flipped heads {len(standing[-1]["flips"])} times \n')
