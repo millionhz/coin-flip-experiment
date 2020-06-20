@@ -1,6 +1,5 @@
-from random import randint, sample
-from string import ascii_letters, digits
-# TODO: Add numpy
+from random import randint
+
 # *limit = 10000000
 # *max memory usage = 2000MB
 # https://www.youtube.com/watch?v=uTChrirK-hw&t=373s
@@ -23,6 +22,10 @@ def sit_stand():
     global subjects_lost
     global standing
     #global sitting
+    # subjects_lost is declared inside the function
+    # as it need to be reset everytime the function
+    # run and it also need to be accessable outside
+    # the function
     subjects_lost = 0
     win = []
     #lost = []
