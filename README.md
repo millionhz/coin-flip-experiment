@@ -4,6 +4,8 @@ A simulation of the coin flip thought experiment.
 
 Concept: <https://www.youtube.com/watch?v=uTChrirK-hw&t=373s>
 
+NOTE: The simulation was run with 10,000,000,000 subjects. The results are available in [subjects_10bil_results.txt.](/subjects_10bil_results.txt)
+
 ## The Experiment
 
 The experiment involves 100 people standing and flipping a coin and if the coin lands on heads they keep standing and if there coin lands on tails they sit.
@@ -18,39 +20,41 @@ The experiment also proves that there will always be at least one person who lan
 
 Check this [link](https://www.youtube.com/watch?v=uTChrirK-hw&t=373s) for more information.
 
-NOTE: If you run `sim_no_log.py` with 100 subjects, mostly the last two or three subjects standing will flip tails, leaving no winner. This happens because of probability. This issue is also mentioned in [The Anomaly](#the-anomaly) section.
+NOTE: If you run `sim.py` with 100 subjects, mostly the last two or three subjects standing will flip tails, leaving no winner. This happens because of probability. This issue is also mentioned in [The Anomaly](#the-anomaly) section.
 
-_I would recommend you to run the simulation with at least to 50000 subjects, for more prominent results (you can use this command: `python sim_no_log.py 50000`)._
+_I would recommend you to run the simulation with at least to 50000 subjects, for more prominent results (you can use this command: `python sim.py 50000`)._
 
-## How the scripts works
-
-The python scripts simulate the coin flip experiment by making a set of a specific number of subjects, and calculating the state of the flipped coin by using the python random library.
-
-## Main Script
-
-**Use `sim_no_log.py` for the simulation.**
-
-It uses only a **few MBs** of memory and there is **no limit** to the number of subjects it can simulate.
-
-### Using `sim_no_log.py`
-
-By default `sim_no_log.py` will simulate 10000 subjects if no argument is provided:
+## Usage
 
 ```code
-python sim_no_log.py
+usage: sim.py [-h] [subjects]
+```
+
+By default `sim.py` will simulate 10000 subjects if no argument is provided:
+
+```code
+python sim.py
 
 Running simulation with 10000 subjects
 ```
 
-You can specify the number of subject by using the positional argument:
+You can specify the number of subject by using the positional argument [subjects]:
 
 ```code
-python sim_no_log.py 10000000
+python sim.py 10000000
 
 Running simulation with 10000000 subjects
 ```
 
-## Other Scripts
+## How the scripts works
+
+The python scripts simulate the coin flip experiment by using a set of a specific number of subjects, and calculating the output of their coin flips by using the python random library.
+
+### Main Script
+
+`sim.py` is the main simulation script. It uses only a **few MBs** of memory and there is **no limit** to the number of subjects it can simulate. However, it does not log any information for later use.
+
+### Other Scripts
 
 `sim_low_memory.py` and `sim_high_memory.py` are **slower** and **more memory intensive** as they log all the details (i.e. the ids of the subjects and there coin flips) into an array. Logging info is good if we want to analyze the data later or plot it but in our case it is irrelevant. They also **do not support argument parsing.**
 
@@ -60,12 +64,12 @@ Running simulation with 10000000 subjects
 
 ## The Anomaly
 
-Sometimes the script will not return a result (i.e. %age Lost : 100%); its mainly because the last 2 or 3 subjects standing flipped tails. This is very unlikely but these sort of things happen because of probability. This issue is also mentioned at the end of the [The Experiment](#the-experiment) section.
+Sometimes the script will not return a result (i.e. %age Lost : 100%); its mainly because the last 2 or 3 subjects standing flipped tails. This is very unlikely but these sort of things happen because of probability.
 
 ## Example Run
 
 ```code
-python sim_no_log.py 50
+python sim.py 50
 
 Running simulation with 50 subjects
 

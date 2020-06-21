@@ -1,0 +1,165 @@
+Round: 1
+Out of 10000000000; 4999956943 people flipped heads 1 time/s
+%age Lost: 50.00043057
+
+
+Round: 2
+Out of 4999956943; 2499961000 people flipped heads 2 time/s
+%age Lost: 50.000349433009106
+
+
+Round: 3
+Out of 2499961000; 1250001487 people flipped heads 3 time/s
+%age Lost: 49.999160506903905
+
+
+Round: 4
+Out of 1250001487; 624978376 people flipped heads 4 time/s
+%age Lost: 50.001789397871335
+
+
+Round: 5
+Out of 624978376; 312473380 people flipped heads 5 time/s
+%age Lost: 50.002529367512075
+
+
+Round: 6
+Out of 312473380; 156223215 people flipped heads 6 time/s
+%age Lost: 50.0043123673447
+
+
+Round: 7
+Out of 156223215; 78101583 people flipped heads 7 time/s
+%age Lost: 50.00641677999009
+
+
+Round: 8
+Out of 78101583; 39040428 people flipped heads 8 time/s
+%age Lost: 50.013269257295335
+
+
+Round: 9
+Out of 39040428; 19512248 people flipped heads 9 time/s
+%age Lost: 50.02040448941799
+
+
+Round: 10
+Out of 19512248; 9753690 people flipped heads 10 time/s
+%age Lost: 50.01247421619487
+
+
+Round: 11
+Out of 9753690; 4880495 people flipped heads 11 time/s
+%age Lost: 49.96257826525141
+
+
+Round: 12
+Out of 4880495; 2440151 people flipped heads 12 time/s
+%age Lost: 50.001977258454325
+
+
+Round: 13
+Out of 2440151; 1219806 people flipped heads 13 time/s
+%age Lost: 50.0110443984819
+
+
+Round: 14
+Out of 1219806; 609345 people flipped heads 14 time/s
+%age Lost: 50.04574497911963
+
+
+Round: 15
+Out of 609345; 304744 people flipped heads 15 time/s
+%age Lost: 49.9882660889972
+
+
+Round: 16
+Out of 304744; 152462 people flipped heads 16 time/s
+%age Lost: 49.97046701493713
+
+
+Round: 17
+Out of 152462; 76108 people flipped heads 17 time/s
+%age Lost: 50.08067584053732
+
+
+Round: 18
+Out of 76108; 38067 people flipped heads 18 time/s
+%age Lost: 49.982919009828144
+
+
+Round: 19
+Out of 38067; 19284 people flipped heads 19 time/s
+%age Lost: 49.34194972023012
+
+
+Round: 20
+Out of 19284; 9598 people flipped heads 20 time/s
+%age Lost: 50.22816842978634
+
+
+Round: 21
+Out of 9598; 4797 people flipped heads 21 time/s
+%age Lost: 50.020837674515526
+
+
+Round: 22
+Out of 4797; 2416 people flipped heads 22 time/s
+%age Lost: 49.63518865957891
+
+
+Round: 23
+Out of 2416; 1202 people flipped heads 23 time/s
+%age Lost: 50.248344370860934
+
+
+Round: 24
+Out of 1202; 582 people flipped heads 24 time/s
+%age Lost: 51.58069883527454
+
+
+Round: 25
+Out of 582; 276 people flipped heads 25 time/s
+%age Lost: 52.57731958762887
+
+
+Round: 26
+Out of 276; 134 people flipped heads 26 time/s
+%age Lost: 51.449275362318836
+
+
+Round: 27
+Out of 134; 74 people flipped heads 27 time/s
+%age Lost: 44.776119402985074
+
+
+Round: 28
+Out of 74; 33 people flipped heads 28 time/s
+%age Lost: 55.4054054054054
+
+
+Round: 29
+Out of 33; 14 people flipped heads 29 time/s
+%age Lost: 57.57575757575758
+
+
+Round: 30
+Out of 14; 10 people flipped heads 30 time/s
+%age Lost: 28.57142857142857
+
+
+Round: 31
+Out of 10; 4 people flipped heads 31 time/s
+%age Lost: 60.0
+
+
+Round: 32
+Out of 4; 2 people flipped heads 32 time/s
+%age Lost: 50.0
+
+
+Round: 33
+Out of 2; 1 people flipped heads 33 time/s
+%age Lost: 50.0
+
+In this simulation 1 person flipped heads 34 times
