@@ -58,8 +58,6 @@ The python scripts simulate the coin flip experiment by using a set of a specifi
 
 `sim_low_memory.py` and `sim_high_memory.py` are **slower** and **more memory intensive** as they log all the details (i.e. the ids of the subjects and there coin flips) into an array. Logging info is good if we want to analyze the data later or plot it but in our case it is irrelevant. They also **do not support argument parsing.**
 
-`sim_low_memory.py` simulates up to **20000** subjects. This script stores all the subjects in one array and manipulate that array by removing the subjects who lost (i.e. flipped tails). The removing mechanism causes memory errors when a large data set is used.
-
 `sim_high_memory.py` simulates **10000000** subjects. This script stores the subjects in an array, it then makes another array where it stores the subjects who got a heads and then it replaces the old array with the new one. That is the reason why this script can use up to **2000MB** of memory. The memory usage can be decreased by using a better data structure _(which i didn't)_. It is just to show that up to **22** consecutive coin flips to heads is possible.
 
 ## The Anomaly
